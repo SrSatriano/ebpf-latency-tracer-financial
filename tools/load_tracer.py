@@ -16,7 +16,7 @@ def main() -> int:
         print("Requer root ou CAP_BPF para carregar programas eBPF", file=sys.stderr)
         return 1
 
-    print(f"[stub] Loading tracer on {args.iface} port {args.port}")
+    print(f"Loading tracer on {args.iface} port {args.port}")
     print("Use libbpf/bcc to attach bpf/net_latency.c to tracepoints")
     return 0
 
